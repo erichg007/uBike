@@ -36,6 +36,7 @@ async function ubikeData() {
     newSmall.className = "text-muted"
     newSmall.textContent = x.split("|")[2]
     newLi.appendChild(newSmall)
+    const newList = document.querySelector(".siteList")
     newList.insertAdjacentElement("beforeend", newLi)
   })
 }
